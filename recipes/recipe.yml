@@ -31,7 +31,6 @@ modules:
         # "firefox" is the main package, "firefox-langpacks" is a dependency
         - firefox
         - firefox-langpacks # also remove firefox dependency (not required for all packages, this is a special case)
-        - https://github.com/rustdesk/rustdesk/releases/download/1.4.4/rustdesk-1.4.4-0.x86_64.rpm
   - type: rpm-ostree
     install:
     - netbird
