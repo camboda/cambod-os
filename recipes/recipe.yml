@@ -33,7 +33,7 @@ modules:
         - firefox-langpacks # also remove firefox dependency (not required for all packages, this is a special case)
   - type: rpm-ostree
     install:
-    - netbird
+    - netbird-ui
     - https://github.com/rustdesk/rustdesk/releases/download/1.4.5/rustdesk-1.4.5-0.x86_64.rpm
   - type: systemd
     system:
