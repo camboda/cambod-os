@@ -36,6 +36,7 @@ modules:
     - netbird
     - netbird-ui
     - https://github.com/rustdesk/rustdesk/releases/download/1.4.5/rustdesk-1.4.5-0.x86_64.rpm
+    - mscore-fonts-all
   - type: systemd
     system:
       enabled:
