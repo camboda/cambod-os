@@ -40,6 +40,7 @@ modules:
     - google-noto-sans-khmer-fonts
     - khmer-os-fonts-all
     - ibus-m17n
+    - m17n-db
     - curl
     - cabextract
     - xorg-x11-font-utils
