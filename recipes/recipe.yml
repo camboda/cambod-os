@@ -63,6 +63,7 @@ modules:
           - org.mozilla.firefox
           - org.gnome.Loupe
           - org.libreoffice.LibreOffice
+          - org.telegram.desktop
           #- com.rustdesk.RustDesk
       - scope: user # Also add Flathub user repo, but no user packages
 
