@@ -1,5 +1,5 @@
 {
     "filesystem": [
-        "home/.local/share/TelegramDesktop/files"
+        "home/.var/app/org.telegram.desktop/data/TelegramDesktop/data/temp_data"
     ]
 }
