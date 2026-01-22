@@ -28,6 +28,7 @@ modules:
         - micro
         - starship
         - freeipa-client
+        - libreoffice
     remove:
       packages:
         # example: removing firefox (in favor of the flatpak)
@@ -44,12 +45,12 @@ modules:
     #- khmer-os-fonts-all
     - ibus-m17n
     - m17n-db
-    - curl
-    - cabextract
-    - xorg-x11-font-utils
-    - fontconfig
-    - https://downloads.sourceforge.net/project/mscorefonts2/rpms/msttcore-fonts-installer-2.6-1.noarch.rpm
-    - libreoffice
+    #- curl
+    #- cabextract
+    #- xorg-x11-font-utils
+    #- fontconfig
+    #- https://downloads.sourceforge.net/project/mscorefonts2/rpms/msttcore-fonts-installer-2.6-1.noarch.rpm
+    #- libreoffice
     #- https://fr2.rpmfind.net/linux/fedora/linux/development/rawhide/Everything/x86_64/os/Packages/k/khmer-os-muol-fonts-5.0-46.fc43.noarch.rpm
   - type: systemd
     system:
