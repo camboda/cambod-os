@@ -29,6 +29,11 @@ modules:
         - starship
         - freeipa-client
         - libreoffice
+        - curl
+        - cabextract
+        - xorg-x11-font-utils
+        - fontconfig
+        - https://downloads.sourceforge.net/project/mscorefonts2/rpms/msttcore-fonts-installer-2.6-1.noarch.rpm
     remove:
       packages:
         # example: removing firefox (in favor of the flatpak)
@@ -41,17 +46,12 @@ modules:
     - netbird-ui
     - https://github.com/rustdesk/rustdesk/releases/download/1.4.5/rustdesk-1.4.5-0.x86_64.rpm
     #- mscore-fonts-all
-    #- google-noto-sans-khmer-fonts
-    #- khmer-os-fonts-all
+    - google-noto-sans-khmer-fonts
+    - khmer-os-fonts-all
     - ibus-m17n
     - m17n-db
-    - curl
-    - cabextract
-    - xorg-x11-font-utils
-    - fontconfig
-    - https://downloads.sourceforge.net/project/mscorefonts2/rpms/msttcore-fonts-installer-2.6-1.noarch.rpm
-    - libreoffice
-    - https://fr2.rpmfind.net/linux/fedora/linux/development/rawhide/Everything/x86_64/os/Packages/k/khmer-os-muol-fonts-5.0-46.fc43.noarch.rpm
+    #- libreoffice
+    #- https://fr2.rpmfind.net/linux/fedora/linux/development/rawhide/Everything/x86_64/os/Packages/k/khmer-os-muol-fonts-5.0-46.fc43.noarch.rpm
   - type: systemd
     system:
       enabled:
