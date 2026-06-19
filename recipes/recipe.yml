@@ -33,7 +33,8 @@ modules:
         - cabextract
         - xorg-x11-font-utils
         - fontconfig
-        - https://downloads.sourceforge.net/project/mscorefonts2/rpms/msttcore-fonts-installer-2.6-1.noarch.rpm
+        #- https://downloads.sourceforge.net/project/mscorefonts2/rpms/msttcore-fonts-installer-2.6-1.noarch.rpm
+         
     remove:
       packages:
         # example: removing firefox (in favor of the flatpak)
