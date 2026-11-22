@@ -42,10 +42,6 @@ modules:
         - khmer-os-fonts-all
         - ibus-m17n
         - m17n-db
-    remove:
-      packages:
-        - firefox
-        - firefox-langpacks
 
   - type: systemd
     system:
