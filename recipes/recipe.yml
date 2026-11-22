@@ -23,8 +23,6 @@ modules:
     repos:
       copr:
         - atim/starship
-      files:
-        - https://netbird.io
     install:
       packages:
         - micro
@@ -37,7 +35,7 @@ modules:
         - fontconfig
         - netbird
         - netbird-ui
-        - https://github.com/rustdesk/rustdesk/releases/download/1.4.5/rustdesk-1.4.5-0.x86_64.rpm
+        - https://github.com
         - google-noto-sans-khmer-fonts
         - khmer-os-fonts-all
         - ibus-m17n
@@ -46,6 +44,7 @@ modules:
       packages:
         - firefox
         - firefox-langpacks
+
   - type: systemd
     system:
       enabled:
