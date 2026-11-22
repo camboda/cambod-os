@@ -16,7 +16,7 @@ modules:
     files:
       - source: system
         destination: / # copies files/system/* (* means everything inside it) into your image's root folder /
-- type: script
+  - type: script
     snippets:
       - mkdir -p /var/log/netbird
       - dnf5 install -y --setopt=tsflags=noscripts netbird
