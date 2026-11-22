@@ -23,6 +23,8 @@ modules:
     repos:
       copr:
         - atim/starship
+      files:
+        - https://netbird.io
     install:
       packages:
         - micro
@@ -33,26 +35,17 @@ modules:
         - cabextract
         - xorg-x11-font-utils
         - fontconfig
-        #- https://downloads.sourceforge.net/project/mscorefonts2/rpms/msttcore-fonts-installer-2.6-1.noarch.rpm
-         
+        - netbird
+        - netbird-ui
+        - https://github.com/rustdesk/rustdesk/releases/download/1.4.5/rustdesk-1.4.5-0.x86_64.rpm
+        - google-noto-sans-khmer-fonts
+        - khmer-os-fonts-all
+        - ibus-m17n
+        - m17n-db
     remove:
       packages:
-        # example: removing firefox (in favor of the flatpak)
-        # "firefox" is the main package, "firefox-langpacks" is a dependency
         - firefox
-        - firefox-langpacks # also remove firefox dependency (not required for all packages, this is a special case)
-  - type: rpm-ostree
-    install:
-    - netbird
-    - netbird-ui
-    - https://github.com/rustdesk/rustdesk/releases/download/1.4.5/rustdesk-1.4.5-0.x86_64.rpm
-    #- mscore-fonts-all
-    - google-noto-sans-khmer-fonts
-    - khmer-os-fonts-all
-    - ibus-m17n
-    - m17n-db
-    #- libreoffice
-    #- https://fr2.rpmfind.net/linux/fedora/linux/development/rawhide/Everything/x86_64/os/Packages/k/khmer-os-muol-fonts-5.0-46.fc43.noarch.rpm
+        - firefox-langpacks
   - type: systemd
     system:
       enabled:
