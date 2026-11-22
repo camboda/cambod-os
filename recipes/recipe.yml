@@ -38,9 +38,9 @@ modules:
         EOF
 
   - type: dnf
-    repos:
-      files:
-        - https://xlionjuan.github.io/rustdesk-rpm-repo/latest.repo
+    #repos:
+    #  files:
+    #    - https://xlionjuan.github.io/rustdesk-rpm-repo/latest.repo
     install:
       packages:
         - freeipa-client
@@ -48,7 +48,7 @@ modules:
         - curl
         - cabextract
         - xorg-x11-font-utils
-        - fontconfig
+    #    - fontconfig
         - rustdesk
         - google-noto-sans-khmer-fonts
         - khmer-os-fonts-all
