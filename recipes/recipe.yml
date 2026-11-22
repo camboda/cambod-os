@@ -31,6 +31,8 @@ modules:
         - libreoffice
         - curl
         - cabextract
+        - netbird
+        - netbird-ui
         - xorg-x11-font-utils
         - fontconfig
         - rustdesk
