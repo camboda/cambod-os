@@ -16,13 +16,29 @@ modules:
     files:
       - source: system
         destination: / # copies files/system/* (* means everything inside it) into your image's root folder /
-  - type: script
+- type: script
     snippets:
-    - sudo mkdir -p /var/log/netbird
+      - mkdir -p /var/log/netbird
+      - dnf5 install -y --setopt=tsflags=noscripts netbird
+      - |
+        cat << 'EOF' > /etc/systemd/system/netbird.service
+        [Unit]
+        Description=NetBird Mesh VPN Client
+        After=network-online.target
+        Wants=network-online.target
+
+        [Service]
+        Type=simple
+        ExecStart=/usr/bin/netbird service run --config /etc/netbird/config.json --log-level info --daemon-addr unix:///var/run/netbird.sock --log-file /var/log/netbird/client.log
+        Restart=always
+        RestartSec=5
+
+        [Install]
+        WantedBy=multi-user.target
+        EOF
+
   - type: dnf
     repos:
-      copr:
-        - atim/starship
       files:
         - https://xlionjuan.github.io/rustdesk-rpm-repo/latest.repo
     install:
@@ -31,8 +47,6 @@ modules:
         - libreoffice
         - curl
         - cabextract
-        - netbird
-        - netbird-ui
         - xorg-x11-font-utils
         - fontconfig
         - rustdesk
